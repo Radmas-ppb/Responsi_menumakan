@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/FieldRelative">
+        <ImageView
+            android:id="@+id/Fieldimageview"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:id="@+id/fieldtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/Fieldimageview"
+            android:text="Pecel Lele"
+            android:textColor="#000000"/>
+            // Fieldtextview = deskripsi/des//
+        <TextView
+
+            android:id="@+id/Fieldtextview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/Fieldprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fieldtitle"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/Fieldimageview"
+            android:text="15000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
